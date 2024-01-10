@@ -1,6 +1,6 @@
 function generatePassword() {
-  var passLength = window.prompt("Choose length of password (between 8 and 128 characters.)")
-  if (passLength < 8 || passLength > 128) {
+  var length = window.prompt("Choose length of password (between 8 and 128 characters.)")
+  if (length < 8 || length > 128) {
     alert("Please enter a password between 8 and 128 characters!")
   }
   var special = window.confirm("Would you like to include special characters?")
@@ -12,12 +12,12 @@ function generatePassword() {
     generatePassword();
   }
 
-var lowerCaseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var numericChars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "~", "`", "|", "}", "{", "[", "]", ":", ";", "?", ">", "<", ",", ".", "/", "-", "="]
+var lowerCaseChars = ["abcdefghijklmnopqrstuvwxyz"]
+var upperCaseChars = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+var numericChars = ["0123456789"]
+var specialChars = ["!@#$%^&*()_+~'|}{)(:[];?><,.-="]
 
-var includedChars = ""
+var includedChars = "";
 
 if(lowerCase) {
   includedChars += lowerCaseChars
@@ -29,11 +29,20 @@ if(numeric) {
   includedChars += numericChars
 }
 if(special) {
-  include += specialChars
+  includedChars += specialChars
 }
+
+var pass = "";
+
+for (var i = 0; i < length; i++) {
+  var random = Math.floor(Math.random() * includedChars.length);
+  pass += includedChars[random];
 
 }
 
+ console.log(pass);
+
+}
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
