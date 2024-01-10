@@ -17,6 +17,20 @@ var upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 var numericChars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "~", "`", "|", "}", "{", "[", "]", ":", ";", "?", ">", "<", ",", ".", "/", "-", "="]
 
+var includedChars = ""
+
+if(lowerCase) {
+  includedChars += lowerCaseChars
+}
+if(upperCase) {
+  includedChars += upperCaseChars
+}
+if(numeric) {
+  includedChars += numericChars
+}
+if(special) {
+  include += specialChars
+}
 
 }
 
