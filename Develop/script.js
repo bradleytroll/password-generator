@@ -32,15 +32,15 @@ if(special) {
   includedChars += specialChars
 }
 
-var pass = "";
+var password = "";
 
 for (var i = 0; i < length; i++) {
   var random = Math.floor(Math.random() * includedChars.length);
-  pass += includedChars[random];
+  password += includedChars[random];
 
 }
 
- console.log(pass);
+ return password;
 
 }
 // Assignment Code
