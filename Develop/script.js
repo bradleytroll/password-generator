@@ -4,8 +4,9 @@ function generatePassword() {
     alert("Please enter a password between 8 and 128 characters!")
   }
   var special = window.confirm("Would you like to include special characters?")
-
-
+  var numeric = window.confirm("Would you like to include numeric characters?")
+  var lowerCase = window.confirm("Would you like to include lowercase letters?")
+  var upperCase = window.confirm("Would you like to include uppercase letters?")
 
 
 
