@@ -7,7 +7,10 @@ function generatePassword() {
   var numeric = window.confirm("Would you like to include numeric characters?")
   var lowerCase = window.confirm("Would you like to include lowercase letters?")
   var upperCase = window.confirm("Would you like to include uppercase letters?")
-
+  if (!special && !numeric && !lowerCase && !upperCase) {
+    window.alert("Please choose at least one character type!")
+    generatePassword();
+  }
 
 
 }
