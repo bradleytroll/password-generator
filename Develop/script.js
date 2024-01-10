@@ -39,7 +39,7 @@ for (var i = 0; i < length; i++) {
   password += includedChars[random];
 
 }
-
+ window.alert("Thanks. Your new password is coming right up!")
  return password;
 
 }
