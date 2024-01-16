@@ -2,7 +2,7 @@
 
 A simple web-based password generator that allows users to generate secure passwords based on their preferences.
 
-<img src="./assets/pwordgen.png" alt="Password Generator" width="200" />
+<img src="./Assets/pwordgen.png" alt="Password Generator" width="200" />
 
 ## Description
 
@@ -15,13 +15,15 @@ To use the Password Generator, follow these steps:
 1. Open the `index.html` file in your web browser.
 2. Click the "Generate Password" button.
 
-<img src="./assets/pwordopts.png" alt="Password Options" width="200" />
+<img src="./Assets/pwordopts.png" alt="Password Options" width="200" />
+
+
 
 3. Enter the desired length of the password when prompted (between 8 and 128 characters).
 4. Choose the character types to include (special characters, numerals, lowercase letters, and/or uppercase letters).
 5. Your secure password will be generated and displayed in the designated area.
 
-<img src="./assets/pwordcomplete.png" alt="Generated Password" width="200" />
+<img src="./Assets/pwordcomplete.png" alt="Generated Password" width="200" />
 
 ## How it Works
 
